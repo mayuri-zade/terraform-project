@@ -1,10 +1,9 @@
-
 provider "aws" {
 region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
-  ami             = "ami-05bf0125f616dc488"
+  ami             = "ami-097c4e1feeea169e5"
   instance_type   = "t2.micro"
   key_name        = "AWS2"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -23,7 +22,7 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = "ami-05bf0125f616dc488"
+  ami             = "ami-097c4e1feeea169e5"
   instance_type   = "t2.micro"
   key_name        = "AWS2"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -42,7 +41,7 @@ EOF
 }
 
 resource "aws_instance" "three" {
-  ami             = "ami-05bf0125f616dc488"
+  ami             = "ami-097c4e1feeea169e5"
   instance_type   = "t2.micro"
   key_name        = "AWS2"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -53,7 +52,7 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami             = "ami-05bf0125f616dc488"
+  ami             = "ami-097c4e1feeea169e5"
   instance_type   = "t2.micro"
   key_name        = "AWS2"
   vpc_security_group_ids = [aws_security_group.five.id]
